@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Bootstrap with input and 2 buttons</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="text-center  my-5">
+      <img src="ZZ logo black.png" alt="logo" class="logo">
+
+      <h1 class="display-4 text-center  my-4">Hexadecimal <span class="color">Color</span> Generator</h1>
+      <label class="text-dark">Generate random color codes</label>
+
+      <form class="add input-group text-center my-4">
+        <!--Add is own  class not BS-->
+
+        <input class="form-control text-dark shadow-lg rounded m-auto input-number" type="text" name="adding"
+          placeholder="Input number" />
+        <div class="input-group-append">
+          <button class="btn generate-btn btn-md btn-info shadow-lg m-0 px-3" type="button">Generate</button>
+        </div>
+      </form>
+
+    </header>
+
+    <div class="shadow-lg ul-container ">
+      <!--Body-->
+      <ul class="shadow-lg list-group rounded mx-auto color-divs">
+
+        <li class=" list-group-item d-flex justify-content-between  align-items-center"
+          style="background-color:#f6a2c6">
+          <span>#f6a2c6</span>
+          <i title="copy code" class="fas fa-copy copy"></i>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center " style="background-color:#ec519d">
+          <span>#ec519d</span>
+          <i title="copy code"" class=" fas fa-copy copy "></i>
+      </li>
+      <li class=" list-group-item d-flex justify-content-between align-items-center" style="background-color:#ec068d">
+            <span>#ec068d</span>
+            <i title="copy code"" class=" fas fa-copy copy"></i>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color:#c60071">
+          <span>#c60071</span>
+          <i title="copy code"" class=" fas fa-copy copy"></i>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color:#9d0059">
+          <span>#9d0059</span>
+          <i title="copy code"" class=" fas fa-copy copy"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
